@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Meat_shopFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/colorOrange"
+        android:id="@+id/meatToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:text="Meat Shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/cardmeatImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meatToolbar"
+        android:layout_marginTop="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:drawableRight="@drawable/hen"
+                android:drawableLeft="@drawable/leftgo"
+                android:textSize="20dp"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/gradStart"
+                android:id="@+id/Welcome"
+                android:textAlignment="center"
+                android:text="Ꮃelcome To Meat Shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_below="@id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/meat" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ScrollView
+        android:layout_below="@+id/cardmeatImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+   <GridLayout
+      android:translationX="-8dp"
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardmeatImage"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="5dp"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="1dp"
+        android:rowCount="3">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Deal"
+            android:layout_width="180dp"
+            android:layout_height="143dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+              <ImageView
+                android:src="@mipmap/deal"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+              <TextView
+                  android:textColor="@color/black"
+                  android:text="Deal of the day"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"/>
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Chicken"
+            android:layout_width="168dp"
+            android:layout_height="143dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:src="@mipmap/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="Chicken"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Mutton"
+            android:layout_width="180dp"
+            android:layout_height="143dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:src="@mipmap/mutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="Mutton"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SeaFood"
+            android:layout_width="168dp"
+            android:layout_height="143dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:src="@mipmap/fish"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:text="Seafood"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/Pork"
+           android:layout_width="180dp"
+           android:layout_height="143dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="12dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" >
+               <ImageView
+                   android:src="@mipmap/porku"
+                   android:layout_width="match_parent"
+                   android:layout_height="120dp"/>
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Pork"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/Buff"
+           android:layout_width="168dp"
+           android:layout_height="143dp"
+           android:layout_marginLeft="1dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginBottom="12dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" >
+               <ImageView
+                   android:src="@mipmap/bufu"
+                   android:layout_width="match_parent"
+                   android:layout_height="120dp"/>
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Buff"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/Local"
+           android:layout_width="180dp"
+           android:layout_height="143dp"
+           android:layout_marginLeft="15dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="12dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" >
+               <ImageView
+                   android:src="@mipmap/locul"
+                   android:layout_width="match_parent"
+                   android:layout_height="120dp"/>
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Local"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/Others"
+           android:layout_width="168dp"
+           android:layout_height="143dp"
+           android:layout_marginLeft="1dp"
+           android:layout_marginRight="8dp"
+           android:layout_marginBottom="12dp"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="8dp">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent" >
+               <ImageView
+                   android:src="@mipmap/save"
+                   android:layout_width="match_parent"
+                   android:layout_height="120dp"/>
+               <TextView
+                   android:textColor="@color/black"
+                   android:text="Others"
+                   android:gravity="center"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"/>
+
+           </LinearLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+    </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

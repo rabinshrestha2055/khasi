@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bokabazar">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/goat"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+        <activity android:name=".MdetailsActivity" />
+        <activity android:name=".OthersActivity" />
+        <activity android:name=".DealActivity" />
+        <activity android:name=".PorkActivity" />
+        <activity android:name=".FishActivity" />
+        <activity android:name=".LocalActivity" />
+        <activity android:name=".BuffActivity" />
+        <activity android:name=".MuttonActivity" />
+        <activity android:name=".ChickenActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".ChangeActivity" />
+        <activity android:name=".FullScreenActivity" />
+        <activity android:name=".searchActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".Anya"
+            android:label="@string/title_activity_anya"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Birds"
+            android:label="@string/title_activity_birds"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Pooja"
+            android:label="@string/title_activity_pooja"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Kukra"
+            android:label="@string/title_activity_kukra"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Raga"
+            android:label="@string/title_activity_raga"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Boka"
+            android:label="@string/title_activity_boka"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WalkActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
